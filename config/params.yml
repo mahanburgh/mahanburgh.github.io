@@ -21,8 +21,8 @@ hpo:
     - name: "learning_rate"
       type: "float"
       params:
-        low: 1e-5
-        high: 5e-4
+        low: 0.00001
+        high: 0.0005
         log: true
     - name: "weight_decay"
       type: "float"
@@ -35,6 +35,6 @@ hpo:
         choices: [8, 16, 32]
 
 fixed_hyperparameters:
-  learning_rate: 2e-5
+  learning_rate: 0.00002
   weight_decay: 0.01
   batch_size: 16
